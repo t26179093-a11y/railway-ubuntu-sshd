@@ -11,4 +11,5 @@ RUN chmod +x /usr/local/bin/ssh-user-config.sh
 
 EXPOSE 22
 
-CMD ["/usr/local/bin/ssh-user-config.sh"]
+CMD ["/usr/sbin/sshd", "-D"]
+
